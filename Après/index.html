@@ -32,16 +32,33 @@
 		  "openingHours": "Mo-Fr 10:00-19:00"
 		}
 		</script>
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle" />
+	<meta name="twitter:description"
+		content="Photographe à Bordeaux spécialisée en portraits, mariages et événements." />
+	<meta name="twitter:image"
+		content="https://nina-carducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" />
+	<meta name="twitter:site" content="@NinaCarducci" />
+	<!-- Opengraph Meta -->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle" />
+	<meta property="og:description"
+		content="Photographe à Bordeaux spécialisée en portraits, mariages et événements." />
+	<meta property="og:image"
+		content="https://nina-carducci.github.io/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" />
+	<meta property="og:url" content="https://nina-carducci.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="fr_FR" />
 </head>
 
 <body>
-	<div class="top-header">
+	<header class="top-header">
 		<h1 class="name">Nina Carducci - Photographe professionnelle</h1>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Services</a></li>
+				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li>
 					<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
@@ -49,8 +66,9 @@
 				</li>
 			</ul>
 		</div>
-	</div>
-	<div id="header">
+	</header>
+
+	<div id="carousel">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -157,12 +175,12 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">
+					<p class="quote__text">
 						Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
 						qu’un fait est traduit en photo, il cesse d’être un fait pour
 						devenir une opinion. L’inexactitude n’existe pas en photographie.
 						Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-					</h1>
+					</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
@@ -216,11 +234,11 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">
+				<p class="quote__text">
 					De manière inconsciente, je crois, je guette un regard, une
 					expression, des traits ou une nostalgie capable de résumer ou plus
 					exactement de révéler une vie
-				</h1>
+				</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -228,23 +246,23 @@
 	<div id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h1>Une question ? Une demande de devis ?</h1>
+				<h2>Une question ? Une demande de devis ?</h2>
 				<p>
 					N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures
 				</p>
 				<form action="#" method="post">
-					<label>Nom</label>
+					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom" />
-					<label>Email</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email" />
-					<label>Message</label>
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer" />
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.png" loading="lazy" alt="Image d'un appareil photo"
-					srcset="./assets/images/camera.webp" />
+				<img src="./assets/images/camera.png" alt="Image d'un appareil photo"
+					srcset="assets/images/camera.webp" />
 			</div>
 		</div>
 	</div>
